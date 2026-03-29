@@ -76,13 +76,23 @@ void Character::equip(AMateria* m)
         }
     }
     // inventory full: do nothing
+	delete m;
 }
 
 // unequip
-void Character::unequip(int idx)
+/*void Character::unequip(int idx)
 {
     if (idx < 0 || idx >= 4) return;
     _inventory[idx] = NULL; // 不 delete
+}*/
+
+void Character::unequip(int idx)
+{
+    if (idx >= 0 && idx < 4)
+    {
+        delete _inventory[idx]; // 直接删
+        _inventory[idx] = NULL;
+    }
 }
 
 // use

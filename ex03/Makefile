@@ -4,7 +4,7 @@ CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -std=c++98
 
 # 源文件
-SRCS        = AMateria.cpp Character.cpp Cure.cpp Ice.cpp ICharacter.cpp  MateriaSource.cpp main.cpp
+SRCS        = AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp main.cpp
 
 # obj 文件夹
 OBJDIR      = obj

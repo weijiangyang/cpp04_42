@@ -6,9 +6,9 @@ Animal::Animal():_type("animal")
     std::cout << "Animal default constructor called ." << std::endl;
 }
 
-Animal::Animal(std::string type):_type(type)
+Animal::Animal(std::string const &type):_type(type)
 {
-    std::cout << "Animal constructor called ." << std::endl;
+	std::cout << "Animal constructor called ." << std::endl;
 }
 
 Animal::Animal(const Animal &other): _type(other._type)

@@ -1,14 +1,9 @@
 #include "Dog.hpp"
 #include <iostream>
 
-Dog::Dog():Animal("dog")
+Dog::Dog():Animal("Dog")
 {
     std::cout << "Dog default constructor called ." << std::endl;
-}
-
-Dog::Dog(std::string type):Animal(type)
-{
-    std::cout << "Dog constructor called ." << std::endl;
 }
 
 Dog::Dog(const Dog &other):Animal(other)

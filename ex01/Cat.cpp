@@ -1,7 +1,7 @@
 #include "Cat.hpp"
 #include <iostream>
 
-Cat::Cat():Animal("cat")
+Cat::Cat():Animal("Cat")
 {
 	brain = new Brain();
     std::cout << "Cat default constructor called ." << std::endl;
@@ -30,7 +30,6 @@ Cat &Cat::operator=(const Cat &other)
     }
     return (*this);
 }
-
 
 void Cat::makeSound() const
 {

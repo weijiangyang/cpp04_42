@@ -5,9 +5,8 @@
 #include "Cure.hpp"
 #include "MateriaSource.hpp"
 
-#include <iostream>
 
-/*int main()
+int main()
 {
 	IMateriaSource *src = new MateriaSource();
 	src->learnMateria(new Ice());
@@ -26,10 +25,10 @@
 	delete src;
 	
 	return 0;
-}*/
+}
 
 
-int main()
+/*int main()
 {
     std::cout << "===== BASIC TEST =====" << std::endl;
 
@@ -109,4 +108,4 @@ int main()
     std::cout << "Program finished without crash ✔" << std::endl;
 
     return 0;
-}
+}*/

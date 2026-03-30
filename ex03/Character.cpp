@@ -1,6 +1,7 @@
 #include "Character.hpp"
 #include <iostream>
 
+inline ICharacter::~ICharacter() {}
 // 构造函数
 Character::Character(const std::string &name) : _name(name)
 {
